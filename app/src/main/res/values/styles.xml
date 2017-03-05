@@ -1,0 +1,72 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorTextPrimary</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.AlertDialog</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/colorTextPrimaryNormal</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorAccent">@color/dodgerBlue</item>
+    </style>
+
+    <style name="Today">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_error</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/btn_color_transparent</item>
+    </style>
+
+    <style name="Month">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:paddingLeft">@dimen/list_item_padding_vertical</item>
+        <item name="android:paddingRight">@dimen/list_item_padding_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_error</item>
+        <item name="android:textColor">@color/colorTextPrimaryNormal</item>
+        <item name="android:background">@drawable/btn_color_transparent</item>
+    </style>
+
+
+    <style name="Day">
+        <item name="android:textSize">@dimen/text_error</item>
+        <item name="android:textColor">@color/colorTextPrimaryNormal</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Date">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:layout_margin">@dimen/button_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/date_bg_selector</item>
+    </style>
+
+    <style name="AppTheme.Divider.Horizontal.Dark" parent="AppTheme">
+        <item name="android:background">@color/colorControlNormal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height_horizontal</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

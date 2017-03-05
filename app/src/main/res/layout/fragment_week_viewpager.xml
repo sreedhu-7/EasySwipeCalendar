@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/dates_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date1"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/mon"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date2"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tue"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date3"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/wed"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date4"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/thu"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date5"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/fri"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date6"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sat"/>
+
+    <com.easyswipecalendar.view.DateView
+        android:id="@+id/date7"
+        style="@style/Date"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sun"/>
+
+</LinearLayout>
