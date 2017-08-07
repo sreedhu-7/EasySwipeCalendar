@@ -3,6 +3,7 @@ package com.easyswipecalendar.view;
 import android.app.DatePickerDialog;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.content.ContextCompat;
@@ -85,15 +86,15 @@ public class SwipeCalendarView extends ViewGroup implements ViewPager.OnPageChan
         mTodayRightTextView = (TextView) findViewById(R.id.text_today_right);
         mMonthTextView = (Button) findViewById(R.id.text_month);
         mMonthTextView.setTextColor(ContextCompat.getColor(getContext(), R.color.colorTextPrimaryNormal));
-        VectorDrawableCompat dropDownIcon = VectorDrawableCompat.create(getResources(), R.drawable.vc_arrow_drop_down,
-                null);
         mDaysLay = (LinearLayout) findViewById(R.id.days_lay);
         mPager = (WeekViewPager) findViewById(R.id.pager_date);
         mLine = findViewById(R.id.view_line);
         mTodayTextView.setOnClickListener(this);
         mTodayRightTextView.setOnClickListener(this);
         mMonthTextView.setOnClickListener(this);
-        assignVectorDrawable();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            assignVectorDrawable();
+        }
     }
 
     private void assignVectorDrawable() {
